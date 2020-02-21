@@ -3,25 +3,24 @@
 @section('content')
 <div class="container ">
     @foreach($posts as $post)
-    <div class="row ">
-        <div class="col-6 offset-3 d-flex justify-content-center">
+    <div class="row-5">
+        <div class="col-6 offset-3">
             <a href="/profile/{{ $post->user->id }}"> 
-                <img src='/storage/{{$post->image}}' class="w-100"> 
+                <img src='/storage/{{$post->image}}' class="w-100" style="max-width : 550px;"> 
             </a>
         </div>
     <div>
 
-    <div class="row pt-2 pb-4">
-        <div class="col-6 offset-3 ">
+    <div class="row-5 pt-2 pb-4">
+        <div class="col-6 offset-3">
             <div>
-                <p><span class="font-weight-bold pr-1">
+                <p><span class="font-weight-bold" >
                         <a href="/profile/{{$post->user->id}}"><span class="text-dark">{{$post->user->username}}</span></a>
-                    </span>
-                    {{$post->caption}}
+                    </span> {{$post->caption}}
                 </p>
             </div>
         </div>
-    </div>
+    </div> 
     @endforeach
 
     <div class="row">
