@@ -19,7 +19,7 @@ Page to see post details like captions
 ![User-Profile](Screenshots/User-Profile.png)
 
 User Profile page where user can see their bio, description and links along with pictures that they've posted before, they can also edit their profile and add new posts.
-Other users can also follow users that they like.
+Other users can also follow users that they like or unfollow user. The followers will increase/decrease respectively
 
 # Insert New Post
 
